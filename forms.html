@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>Forms</h2>
+
+    <form action="#" target="_blank" method="get" autocomplete="off">
+        <fieldset>
+            <legend>Details</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname" required autofocus><br /><br />
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" disabled /><br /><br />
+            <p>Gender:</p>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label><br /><br />
+            <input type="radio" name="gender" id="female">
+            <label for="male">Female</label>
+            <p>Children:</p>
+            <input type="checkbox" name="child1" id="child1">
+            <label for="child1">1</label><br /><br />
+            <input type="checkbox" name="child2" id="child2">
+            <label for="child2">2</label><br /><br />
+            <input type="checkbox" name="childmore" id="childmore">
+            <label for="childmore">more</label><br /><br />
+            <label for="select">Bikes:</label>
+            <select id="select" name="select" size="2" multiple>
+                <option value="pulsar" selected>pulsar</option>
+                <option value="jupiter">jupiter</option>
+                <option value="splender">splender</option>
+            </select><br /><br />
+            <label for="textarea">Address:</label>
+            <textarea rows="10" cols="10" id="textarea" name="textarea">Hello enter your address</textarea><br /><br>
+            <label for="c">Cars:</label>
+            <input type="text" list="cars" id="c">
+            <datalist name="cars" id="cars">
+                <option value="BMW">
+                <option value="AUDI">
+                <option value="Figo">
+            </datalist> <br><br>
+            <label for="date">DOB: </label>
+            <input type="date" name="date" id="date" min="2001-01-02" max="2015-01-02" /><br /><br />
+            date&time:<input type="datetime-local"><br /><br />
+            file:<input type="file" name="file" id="file"><br /><br />
+            phone Number:<input type="tel" pattern="[0-9]{5}-[0-9]{5}" placeholder="12345-12345"
+                maxlength="10" /><br /><br>
+            <input type="submit" value="Submit"> <input type="submit" formaction="favicon.html" value="formacion">
+            <input type="submit" value="Submit on same page" formtarget="_self">
+            <input type="submit" value="Submit without validation" formnovalidate="formnovalidate">
+
+        </fieldset>
+    </form><br>
+    <p title="link"><a href="home.html">Go Home</a></p></body>
+</body>
+
+</html>

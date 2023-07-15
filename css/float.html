@@ -1,0 +1,67 @@
+<html>
+	
+	<head>
+		
+
+		<title>Float</title>
+		<style>
+			*{
+				box-sizing: border-box;
+			}
+			.box{
+
+				float: left;
+				width:33%;
+				background:yellowgreen;
+				padding:50px;
+
+			}
+			.clearify::after{
+				content: "";
+				clear:both;
+				display:table;
+			}
+
+			ul{
+				list-style-type: none;
+				margin:0;
+				padding: 0;
+				background-color: #333;
+			}
+
+			li{
+				float:left;
+			}
+
+			li a{
+
+                display: inline-block;
+                	color: white;
+                	text-align: center;
+  				   padding: 14px 16px;
+              text-decoration: none;
+				}
+
+			
+		</style>
+
+	</head>
+
+	<body>
+		<h2>Grid</h2>
+		<div class="clearify">
+			<div class="box">some text inside it</div>
+			<div class="box">some text inside it</div>
+			<div class="box">some text inside it</div>
+
+		</div><br>
+
+		<div>
+			
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Careers</a></li>
+		</div>
+	</body>
+</html>

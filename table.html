@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>Tables</title>
+	<style>
+       .table{
+       	border-collapse: collapse;
+       	 border-spacing: 100px;
+       }
+       th,td{
+       	padding:15px;
+       }
+       tr:nth-child(even):hover{
+       	background-color: powderblue;
+       }
+       th:nth-child(odd):hover{
+       	background-color:red;
+       }
+	</style>
+</head>
+<body>
+
+<table border='1' class="table"> 
+
+
+	<tr>
+		<th>Name</th>
+		<td>monish</td>
+		<td>kishore</td>
+	</tr>
+	<tr>
+		<th style="height: 200px;">Address</th>
+		<td>Namakkal</td>
+		<td>Erode</td> 
+	</tr>
+	<tr>
+		<th>Mobile</th>
+		<td>98766</td>
+
+		<td>34456</td>
+	</tr>
+</table><br/>
+<h2>colgroup</h2>
+<table border='1' class="table2"> 
+
+    <colgroup>
+    	<col span="2" style="background-color:green">
+    	<col span="1" style="visibility: collapse;">
+    </colgroup>
+	<tr>
+		<th>Name</th>
+		<td>monish</td>
+		<td>kishore</td>
+	</tr>
+	<tr>
+		<th style="height: 200px;">Address</th>
+		<td>Namakkal</td>
+		<td>Erode</td> 
+	</tr>
+	<tr>
+		<th>Mobile</th>
+		<td>98766</td>
+
+		<td>34456</td>
+	</tr>
+</table><br/>
+<p><a href="home.html">Go Home</a></p>
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms_BS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container mt-3">
+        <h2>Stacked form</h2>
+        <form action="#" class="was-validated">
+            <div class=" form-floating mb-3 mt-3 "><!--for default first give label and input but for floating label first give input and label-->
+                
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                <label for="email">Email:</label>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-floating mb-3">
+                
+               <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+               <label for="pwd">Password:</label>
+            </div>
+            <div class="form-check mb-3">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+                <input type="range" class="form-range" min="0" max="10"/>
+            </div>
+
+            <div class="form-floating mt-3 mb-3">
+                <select class="form-select " id="floatingSelectGrid">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <label for="floatingSelectGrid">Floating label select</label>
+            </div>
+            <div class="form-check form-switch mt-3 mb-3"> 
+                <input type="checkbox" class="form-check-input" id="a"/>
+                <label for="a" class="form-check-label">GO</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <form class="mt-4">
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control-lg" placeholder="input-1">
+                </div>
+                <div class="col">
+                    <input type="password" class="form-control-plaintext" placeholder="plaintext"><!--without borders-->
+                </div>
+                <div class="col">
+                    <input type="password" class="form-control-sm" placeholder="input-2">
+                </div>
+            </div>
+            <div class="mt-3 mb-3 input-group input-group-lg"">
+                <span class="input-group-text">www.</span>
+                <input type="text" class="form-control" placeholder="enter domain name" />
+                <span class="input-group-text">.com</span>
+
+            </div>
+            <div class="mt-3 mb-3 input-group input-group-sm dropdown ">
+                <span class="input-group-text"><input type="radio"/></span>
+                <input type="text" class="form-control" placeholder="enter domain name" />
+                <span class="input-group-text">
+                    <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown"   data-bs-placement="bottom">dropdown</button>
+                    <ul class="dropdown-menu">
+                     <li class="dropdown-item">.com</li>
+                     <li class="dropdown-item">.in</li>
+                     <li class="dropdown-item">.net</li>
+                    </ul>
+                </span>
+
+            </div>
+
+
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
