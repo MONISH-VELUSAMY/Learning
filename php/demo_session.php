@@ -14,9 +14,7 @@ $_SESSION["pet"]="dog";
 echo "session varibables are set";
 
 
-session_unset();
 
-session_destroy();
 
 ?>
     
